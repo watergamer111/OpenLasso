@@ -1,11 +1,11 @@
 # OpenLasso 1.0
 
-OpenLasso is an open-source process and resource manager for Windows 10 and 11, written in C++17 with native Win32 APIs (no heavy frameworks).
-It monitors processes, CPU, RAM, GPU, disk and network in real time, changes process priorities and applies custom automatic rules.
+## About this project
+OpenLasso is an independent open-source project. Its features were designed by studying how existing process managers behave, and the code was written with the assistance of AI tools (Claude).
+No source code, binaries, icons or other assets from any commercial software were copied.
+OpenLasso is not affiliated with, endorsed by or sponsored by any commercial product or its authors. All product names and trademarks belong to their respective owners.
 
 by watergamer111
-
-> OpenLasso is an independent project written from scratch. It is not affiliated with, endorsed by or derived from any commercial software. All product names and trademarks mentioned anywhere belong to their respective owners.
 
 [**Download the latest release**](../../releases/latest)
 
