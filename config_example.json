@@ -1,0 +1,17 @@
+{
+  "application": "OpenLasso",
+  "settings": {
+    "throttle": true, "load_threshold": 80, "process_threshold": 10,
+    "throttle_seconds": 2, "notifications": false, "delegate_to_service": true,
+    "auto_apply": true, "start_minimized": true, "update_repo": "",
+    "format": 2
+  },
+  "exclusions": ["explorer.exe", "dwm.exe"],
+  "rules": [
+    { "process": "chrome.exe", "priority": "BELOW_NORMAL_PRIORITY_CLASS", "affinity": "0x0", "memory": 0, "efficiency": "on",
+      "io": 0, "thread_boost": "", "cpu_sets": 0, "gpu_priority": 0, "gpu_pref": 0,
+      "prevent_sleep": false, "force_power": false, "limit_percent": 0, "guard_cpu": 0,
+      "guard_seconds": 0, "guard_action": 0, "guard_command": "", "block": false,
+      "balance_instances": false, "power_plan": "", "enabled": true }
+  ]
+}
