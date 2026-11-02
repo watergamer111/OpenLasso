@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.15)
+project(OpenLasso CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded")
+
+add_executable(OpenLasso WIN32 main.cpp process_supervisor.cpp features.cpp app.rc)
+target_compile_definitions(OpenLasso PRIVATE UNICODE _UNICODE _CRT_SECURE_NO_WARNINGS)
+target_link_libraries(OpenLasso PRIVATE user32 gdi32 comctl32 advapi32 shell32 comdlg32
+                      powrprof ole32 psapi winhttp gdiplus pdh)
+if(MSVC)
+  target_compile_options(OpenLasso PRIVATE /W3 /utf-8 /EHsc)
+  target_link_options(OpenLasso PRIVATE /MANIFEST:NO)
+else()
+  target_compile_definitions(OpenLasso PRIVATE _WIN32_WINNT=0x0A00)
+  target_link_options(OpenLasso PRIVATE -municode -mwindows -static)
+endif()
