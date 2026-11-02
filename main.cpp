@@ -710,7 +710,7 @@ static void KeepScroll(HWND lv, const std::function<void()>& fill) {
     if (!ListView_GetItemRect(lv, 0, &r, LVIR_BOUNDS)) return;
     int rowH = r.bottom - r.top;
     if (rowH <= 0) return;
-    int target = std::min(top, count - 1);
+    int target = (std::min)(top, count - 1);
     ListView_Scroll(lv, 0, (target - ListView_GetTopIndex(lv)) * rowH);
 }
 static void FillProcListImpl();
@@ -1058,7 +1058,7 @@ static void PaintGraph(HDC dc, int W) {
         if (b == 0 && avail && !g_sv.CoreLoads().empty()) {
             const std::vector<double>& cores = g_sv.CoreLoads();
             int nc = (int)cores.size();
-            int bw = std::max(1, static_cast<int>((box.right - box.left) / nc));
+            int bw = (std::max)(1, static_cast<int>((box.right - box.left) / nc));
             for (int i = 0; i < nc; ++i) {
                 int hc = (int)((box.bottom - box.top) * std::clamp(cores[i], 0.0, 100.0) / 100.0);
                 RECT cb = { box.left + i * bw, box.bottom - hc, box.left + i * bw + bw - 1, box.bottom };

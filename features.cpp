@@ -237,7 +237,7 @@ void ProcessSupervisor::SampleExtras() {
         std::vector<SppiLocal> buf(n);
         ULONG ret = 0;
         if (qsi(8, buf.data(), (ULONG)(n * sizeof(SppiLocal)), &ret) == 0) {
-            size_t got = std::min(n, (size_t)ret / sizeof(SppiLocal));
+            size_t got = (std::min)(n, (size_t)ret / sizeof(SppiLocal));
             bool first = m_prevCoreIdle.size() != got;
             if (first) {
                 m_prevCoreIdle.assign(got, 0);
