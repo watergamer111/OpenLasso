@@ -12,3 +12,4 @@ First public release by watergamer111.
 - Tray icon, tray notifications, start with Windows, start minimized
 - Windows service applying rules with the window closed
 - Profiles, import/export, command line (--version, --status, --list, --apply, --profile)
+- Starts minimized to the system tray by default and keeps running in the background (configurable)
