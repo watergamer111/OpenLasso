@@ -59,3 +59,10 @@ Libraries: comctl32, comdlg32, powrprof, psapi, winhttp, gdiplus, pdh, ole32, sh
 - Signed installer: the executable is not code-signed.
 - Localization: English only.
 - Remote management: not available.
+
+## Security
+- OpenLasso is fully open source. You can read every line of code in this repository and build the exe yourself with build.bat or CMake.
+- The release executable is built from the source in this repository. VirusTotal scan: https://www.virustotal.com/gui/file/191a01d285290d9149293028a480d3e03463b1825bed33cb5cd465a1e1c01f73
+- The executable is not code-signed, so Windows SmartScreen may show a warning. Click "More info" and then "Run anyway" if you trust the source.
+- OpenLasso changes the priority and affinity of other processes, so a few antivirus programs may flag it as a false positive. If in doubt, build it yourself from the source.
+- OpenLasso does not collect or send personal data. Its only network access is an optional update check (Updates menu, manual, disabled until update_repo is set) that sends one HTTPS request to api.github.com.
