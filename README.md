@@ -7,6 +7,8 @@ by watergamer111
 
 > OpenLasso is an independent project written from scratch. It is not affiliated with, endorsed by or derived from any commercial software. All product names and trademarks mentioned anywhere belong to their respective owners.
 
+   ![OpenLasso screenshot](screenshot.png)
+
 ## Main features
 - **Processes**: priority, CPU affinity, CPU Sets, memory priority, I/O priority, efficiency mode, thread boost, GPU priority and GPU preference, prevent sleep, high-power mode per process.
 - **Rules** match a program by name, by full path, by folder (trailing backslash) or with wildcards (`*`, `?`). A rule named `*` is the **default rule**: it applies to every process that no other rule covers.
