@@ -7,6 +7,11 @@ by watergamer111
 
 > OpenLasso is an independent project written from scratch. It is not affiliated with, endorsed by or derived from any commercial software. All product names and trademarks mentioned anywhere belong to their respective owners.
 
+[**Download the latest release**](../../releases/latest)
+
+> **Note:** on first launch OpenLasso starts hidden and runs in the background, so no window will open.
+> Look for its icon in the Windows system tray: click the small arrow (^) next to the clock, then click the icon to open the window.
+
    ![OpenLasso screenshot](screenshot.png)
 
 ## Main features
@@ -54,8 +59,3 @@ Libraries: comctl32, comdlg32, powrprof, psapi, winhttp, gdiplus, pdh, ole32, sh
 - Signed installer: the executable is not code-signed.
 - Localization: English only.
 - Remote management: not available.
-
-[**Download the latest release**](../../releases/latest)
-
-> **Note:** on first launch OpenLasso starts hidden and runs in the background, so no window will open.
-> Look for its icon in the Windows system tray: click the small arrow (^) next to the clock, then click the icon to open the window.
