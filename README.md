@@ -46,6 +46,13 @@ Libraries: comctl32, comdlg32, powrprof, psapi, winhttp, gdiplus, pdh, ole32, sh
 - `OpenLasso-throttle.csv` Auto-throttle report
 - `OpenLasso-service.status` heartbeat written by the service
 
+## First launch
+On first launch OpenLasso starts hidden and keeps running in the background.
+Look for its icon in the Windows system tray: click the small arrow (^) next to the clock to show hidden icons.
+Click the icon to open the window, or right-click it for the tray menu.
+The close button hides the window to the tray instead of quitting; use Exit from the tray menu to close the program completely.
+Both behaviors can be changed in the settings ("Start minimized to tray" and "Close button hides to tray").
+
 ## Limits
 - Email notifications: only tray balloons are available.
 - Automatic updates with a background installer: only manual checks (Updates menu) are available.
